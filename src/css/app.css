@@ -1,9 +1,13 @@
+/* Application Container Style */
+
 .App {
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
+
+/* Navbar Styling */
 
 nav {
 	width: 100%;
@@ -66,6 +70,8 @@ nav {
 	width: 100%;
 }
 
+/* Footer Styling */
+
 footer {
 	width: 100%;
 	display: flex;
@@ -73,6 +79,8 @@ footer {
 	justify-content: center;
 	padding: 1em;
 }
+
+/* Responsive Add-ons */
 
 @media screen and (max-width: 660px) {
 	nav {

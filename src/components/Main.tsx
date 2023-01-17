@@ -1,3 +1,8 @@
+/**
+ * Main Component
+ */
+
+// Dependencies
 import React, { useContext, useState } from 'react';
 import DispatchContext from '../context/DispatchContext';
 import '../css/main.css';
@@ -12,13 +17,17 @@ const snackbarPositions = [
 ];
 
 const Main = () => {
+	// Input State and Dispatch function using useContext
 	const [input, setInput] = useState('This is a message!');
 	const dispatch = useContext<DispatchContextType>(DispatchContext);
 
+	// Handle changes in the input
 	const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
 		setInput(e.target.value);
 	};
 
+	// Open the snackbar when the button is clicked
+	// The type of snackbar is manipulated here
 	const handleSnackbarColor = (type: AppState['snackbar']['type']) => {
 		dispatch({
 			payload: { message: input, type: type },
@@ -26,6 +35,8 @@ const Main = () => {
 		});
 	};
 
+	// Open the snackbar when the button is clicked
+	// The position of snackbar is manipulated here
 	const handleSnackbarPosition = (value: string) => {
 		const position = value
 			.toLowerCase()

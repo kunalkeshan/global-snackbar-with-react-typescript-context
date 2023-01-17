@@ -1,3 +1,8 @@
+/**
+ * App.tsx
+ */
+
+// Dependencies
 import React, { useReducer } from 'react';
 import reducer from './reducer/reducer';
 import AppContext from './context/AppContext';
@@ -9,6 +14,8 @@ import Snackbar from './components/Snackbar';
 import './css/app.css';
 
 function App() {
+	// useReducer with the reducer func from './reducer/reducer.ts'
+	// The second arg is an initial value for the application state
 	const [state, dispatch] = useReducer(reducer, {
 		snackbar: {
 			message: '',
@@ -17,6 +24,9 @@ function App() {
 			position: 'bottom-right',
 		},
 	});
+
+	// state is passed into the app context
+	// dispatch function is passed into the dispatch context
 	return (
 		<AppContext.Provider value={state}>
 			<DispatchContext.Provider value={dispatch}>

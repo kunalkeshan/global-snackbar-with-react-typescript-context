@@ -1,3 +1,8 @@
+/**
+ * Navbar Component
+ */
+
+// Dependencies
 import React from 'react';
 
 const Navbar = () => {
@@ -8,7 +13,10 @@ const Navbar = () => {
 			</a>
 			<ul className='nav__list'>
 				<li>
-					<a href='#' target={'_blank'}>
+					<a
+						href='https://blog.kunalkeshan.dev/learn-how-to-use-context-and-reducer-hooks-in-reactjs-by-creating-a-global-snackbar'
+						target={'_blank'}
+					>
 						Instructions
 					</a>
 				</li>

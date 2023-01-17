@@ -7,6 +7,10 @@ import React from 'react';
 
 const reducer = (state: AppState, action: AppActions) => {
 	switch (action.type) {
+		// When snackbar is open, 
+		// - spread the previous value
+		// - spread the payload (override prev values) 	   
+		// - set open to true
 		case 'OPEN_SNACKBAR': {
 			state.snackbar = {
 				...state.snackbar,
@@ -15,6 +19,8 @@ const reducer = (state: AppState, action: AppActions) => {
 			};
 			return { ...state };
 		}
+		// When snackbar is close
+		//  - set open to false
 		case 'CLOSE_SNACKBAR': {
 			state.snackbar.open = false;
 			return { ...state };

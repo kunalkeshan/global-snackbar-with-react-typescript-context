@@ -1,3 +1,8 @@
+/**
+ * Footer Component
+ */
+
+// Dependencies
 import React from 'react';
 
 const Footer = () => {

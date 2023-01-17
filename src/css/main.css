@@ -1,3 +1,5 @@
+/* Main Container */
+
 main {
 	flex: 1;
 	display: flex;
@@ -17,6 +19,8 @@ main {
 	padding: 1em;
 }
 
+/* Input */
+
 .main__input {
 	border: 1px solid #808080;
 	width: clamp(200px, 100%, 600px);
@@ -27,6 +31,8 @@ main {
 .main__input:focus {
 	outline: 1px solid #fff;
 }
+
+/* List and List Items */
 
 .main__list,
 .position__list {

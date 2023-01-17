@@ -1,0 +1,35 @@
+.snackbar {
+	position: absolute;
+	display: none;
+	padding: 1em 2em;
+	align-items: center;
+	justify-content: space-between;
+	width: min(100%, 320px);
+	height: min-content;
+	border-radius: 4px;
+}
+
+.snackbar button {
+	all: unset;
+	cursor: pointer;
+}
+
+.top-right {
+	top: 2rem;
+	right: 2rem;
+}
+
+.top-left {
+	top: 2rem;
+	left: 2rem;
+}
+
+.bottom-left {
+	bottom: 2rem;
+	left: 2rem;
+}
+
+.bottom-right {
+	bottom: 2rem;
+	right: 2rem;
+}

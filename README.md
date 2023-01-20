@@ -2,10 +2,12 @@
 
 Discover the power of Context & Reducer Hooks in React.js by creating a global snack bar using TypeScript and bootstrapping with Vite.
 
-<a href="https://blog.kunalkeshan.dev/learn-how-to-use-context-and-reducer-hooks-in-reactjs-by-creating-a-global-snackbar" style="display: block;" align="center">
-    <img src="./public/thumbnail.png" alt="Learn How to use Context and Reducer Hooks in React.js by Creating a Global Snackbar" width="60%" />
-    <p>Click to Read!</p>
-</a>
+<p align="center">
+    <a href="https://blog.kunalkeshan.dev/learn-how-to-use-context-and-reducer-hooks-in-reactjs-by-creating-a-global-snackbar" style="display: block;" align="center">
+        <img src="./public/thumbnail.png" alt="Learn How to use Context and Reducer Hooks in React.js by Creating a Global Snackbar" width="60%" />
+        <p>Click to Read!</p>
+    </a>
+</p>
 
 ---
 
